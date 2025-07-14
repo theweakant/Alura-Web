@@ -294,7 +294,7 @@ const fetchBatchStocks = async () => {
                     <option value="">Choose batch</option>
                     {batches.map(batch => (
                       <option key={batch._id} value={batch._id}>
-                        {batch.batchCode} - {batch.productId?.name || "N/A"} (Còn: {batch.remaining})
+                        {batch.batchCode} - {batch.productId?.name || "N/A"} (Còn: {batch.quantity})
                       </option>
                     ))}
                   </select>
